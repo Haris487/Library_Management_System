@@ -1,0 +1,2 @@
+1)PHP DOES'NT HAVE PUBLIC BEFORE CLASS
+2)The last thing that has to be done is loading the views in the order they should be displayed. The second parameter in the view() method is used to pass values to the view. Each value in the $data array is assigned to a variable with the name of its key. So the value of $data['title'] in the controller is equivalent to $title in the view.
