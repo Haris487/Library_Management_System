@@ -87,14 +87,14 @@
 
 <?php if(get_cookie('type') === NULL){ ?>
 
-    <form class = "form" method = "post" action = "/lms/index.php/Login" >
+    <form class = "form" method = "post" action = "<?=base_url()?>index.php/Login" >
                 <input type = "input" name = "username" class="form-control" size = "50"  placeholder = "User Name" >
                 <input type = "password" name = "password" class="form-control" size = "50" placeholder = "Password" >
                 <input type = "submit" class="btn btn-info" value = "LOGIN" >
             </form >
   <?php } else{ ?>
 
-            <form class = "form" method = "post" action = "/lms/index.php/Login/sign_out">
+            <form class = "form" method = "post" action = "<?=base_url()?>index.php/Login/sign_out">
                 <input type = 'submit' class="btn btn-danger" value = "SIGN OUT">
             </form>
       <?php } ?>
